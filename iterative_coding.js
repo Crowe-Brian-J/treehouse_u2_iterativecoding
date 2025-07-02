@@ -9,4 +9,13 @@ const letter = 'b'
  * @param {string} letter - letter to replace above letter with
  * @return {string} Word after letter has been replaced
  */
-function replaceLetter(string, index, letter) {}
+const replaceLetter = (string, index, letter) => {
+  //just to make sure we're getting the values
+  //console.log(`string: ${string}, index: ${index}, letter: ${letter}`)
+  for (let i = 0; i <= index; i++) {
+    //check that we can find the spot where letter needs to be replaced
+    console.log(string.charAt(i))
+  }
+}
+
+replaceLetter(word, index, letter)
