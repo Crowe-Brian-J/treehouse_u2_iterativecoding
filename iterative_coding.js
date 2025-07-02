@@ -10,12 +10,14 @@ const letter = 'b'
  * @return {string} Word after letter has been replaced
  */
 const replaceLetter = (string, index, letter) => {
-  //just to make sure we're getting the values
-  //console.log(`string: ${string}, index: ${index}, letter: ${letter}`)
-  for (let i = 0; i <= index; i++) {
-    //check that we can find the spot where letter needs to be replaced
-    console.log(string.charAt(i))
-  }
+  //create array of strings as individual letters
+  let splitString = string.split('')
+
+  //replace character at index with letter
+  splitString[index] = letter
+
+  //return string with replaced letter
+  return splitString.join('')
 }
 
 replaceLetter(word, index, letter)
